@@ -1,0 +1,143 @@
+{
+    "sense":
+    [
+        {
+            "switch": "$payloadLength",
+            "on":
+            [
+                {
+                    "case": 2,
+                    "do":
+                    [
+                        {
+                            "switch":
+                            {
+                                "byte": 0
+                            },
+                            "on":
+                            [
+                                {
+                                    "case": 13,
+                                    "do":
+                                    [
+                                        {"asset":"digital","value":{"byte":1,"type":"boolean"}}
+                                    ]
+                                },
+                                {
+                                    "case": 18,
+                                    "do":
+                                    [
+                                        {"asset":"water-leak","value":{"byte":1,"type":"integer"}}
+                                    ]
+                                },
+                                {
+                                    "case": "$default",
+                                    "do": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "case": 23,
+                    "do":
+                    [
+                        {
+                            "asset": "temperature",
+                            "value":
+                            {
+                                "byte": 1,
+                                "bytelength": 2,
+                                "type": "integer",
+                                "calculation": "val / 10"
+                            }
+                        },
+                        {
+                            "asset": "humidity",
+                            "value":
+                            {
+                                "byte": 4,
+                                "bytelength": 1,
+                                "type": "integer"
+                            }
+                        },
+                        {
+                            "asset": "position",
+                            "value":
+                            {
+                                "x":
+                                {
+                                    "byte": 6,
+                                    "bytelength": 1,
+                                    "type": "integer"
+                                },
+                                "y":
+                                {
+                                    "byte": 7,
+                                    "bytelength": 1,
+                                    "type": "integer"
+                                },
+                                "z":
+                                {
+                                    "byte": 8,
+                                    "bytelength": 1,
+                                    "type": "integer"
+                                }
+                            }
+                        },
+                        {
+                            "asset": "battery",
+                            "value":
+                            {
+                                "byte": 10,
+                                "bytelength": 2,
+                                "type": "integer",
+                                "calculation": "val / 1000"
+                            }
+                        },
+                        {
+                            "asset": "pulse-count-abs",
+                            "value":
+                            {
+                                "byte": 13,
+                                "bytelength": 4,
+                                "type": "integer"
+                            }
+                        },
+                        {
+                            "asset": "digital",
+                            "value":
+                            {
+                                "byte": 18,
+                                "bytelength": 1,
+                                "type": "boolean"
+                            }
+                        },
+                        {
+                            "asset": "motion",
+                            "value":
+                            {
+                                "byte": 20,
+                                "bytelength": 1,
+                                "type": "integer"
+                            }
+                        },
+                        {
+                            "asset": "water-leak",
+                            "value":
+                            {
+                                "byte": 22,
+                                "bytelength": 1,
+                                "type": "integer"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "case": "$default",
+                    "do": []
+                }
+            ]
+        }
+    ]
+}

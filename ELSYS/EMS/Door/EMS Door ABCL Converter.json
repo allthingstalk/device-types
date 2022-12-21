@@ -1,0 +1,94 @@
+{
+    "sense":
+    [
+        {
+            "switch": "$payloadLength",
+            "on":
+            [
+                {
+                    "case": 2,
+                    "do":
+                    [
+                        {
+                            "asset": "digital",
+                            "value":
+                            {
+                                "byte": 1,
+                                "bytelength": 1,
+                                "type": "boolean"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "case": 16,
+                    "do":
+                    [
+                        {
+                            "asset": "position",
+                            "value":
+                            {
+                                "x":
+                                {
+                                    "byte": 1,
+                                    "type": "integer"
+                                },
+                                "y":
+                                {
+                                    "byte": 2,
+                                    "type": "integer"
+                                },
+                                "z":
+                                {
+                                    "byte": 3,
+                                    "type": "integer"
+                                }
+                            }
+                        },
+                        {
+                            "asset": "battery",
+                            "value":
+                            {
+                                "byte": 5,
+                                "bytelength": 2,
+                                "type": "integer",
+                                "calculation": "val / 1000"
+                            }
+                        },
+                        {
+                            "asset": "pulse-count-abs",
+                            "value":
+                            {
+                                "byte": 8,
+                                "bytelength": 4,
+                                "type": "integer"
+                            }
+                        },
+                        {
+                            "asset": "digital",
+                            "value":
+                            {
+                                "byte": 13,
+                                "bytelength": 1,
+                                "type": "boolean"
+                            }
+                        },
+                        {
+                            "asset": "motion",
+                            "value":
+                            {
+                                "byte": 15,
+                                "bytelength": 1,
+                                "type": "integer"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "case": "$default",
+                    "do": []
+                }
+            ]
+        }
+    ]
+}

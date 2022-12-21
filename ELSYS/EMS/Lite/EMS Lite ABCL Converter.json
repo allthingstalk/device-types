@@ -1,0 +1,74 @@
+{
+    "sense":
+    [
+        {
+            "switch": "$payloadLength",
+            "on":
+            [
+                {
+                    "case": 2,
+                    "do":
+                    [
+                        {
+                            "asset": "water-leak",
+                            "value":
+                            {
+                                "byte": 1,
+                                "bytelength": 1,
+                                "type": "integer"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "case": 10,
+                    "do":
+                    [
+                        {
+                            "asset": "temperature",
+                            "value":
+                            {
+                                "byte": 1,
+                                "bytelength": 2,
+                                "type": "integer",
+                                "calculation": "val / 10"
+                            }
+                        },
+                        {
+                            "asset": "humidity",
+                            "value":
+                            {
+                                "byte": 4,
+                                "bytelength": 1,
+                                "type": "integer"
+                            }
+                        },
+                        {
+                            "asset": "battery",
+                            "value":
+                            {
+                                "byte": 6,
+                                "bytelength": 2,
+                                "type": "integer",
+                                "calculation": "val / 1000"
+                            }
+                        },
+                        {
+                            "asset": "water-leak",
+                            "value":
+                            {
+                                "byte": 9,
+                                "bytelength": 1,
+                                "type": "integer"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "case": "$default",
+                    "do": []
+                }
+            ]
+        }
+    ]
+}

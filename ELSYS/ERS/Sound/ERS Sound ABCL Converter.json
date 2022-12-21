@@ -1,0 +1,49 @@
+{
+  "sense":
+  [
+      {
+          "switch": "$payloadLength",
+          "on":
+          [
+              {
+                  "case": 16,
+                  "do":
+                  [
+                      {
+                          "asset": "temperature",
+                          "value": {"byte":1,"bytelength":2,"type":"integer","calculation":"val / 10"}
+                      },
+                      {
+                          "asset": "humidity",
+                          "value": {"byte":4,"bytelength":1,"type":"integer"}
+                      },
+                      {
+                          "asset": "light",
+                          "value": {"byte":6,"bytelength":2,"type":"integer"}
+                      },
+                      {
+                          "asset": "motion",
+                          "value": {"byte":9,"bytelength":1,"type":"integer"}
+                      },
+                      {
+                          "asset": "battery",
+                          "value": {"byte":11,"bytelength":2,"type":"integer","calculation":"val / 1000"}
+                      },
+                      {
+                          "asset": "soundPeak",
+                          "value": {"byte":14,"bytelength":1,"type":"integer"}
+                      },
+                      {
+                          "asset": "soundAverage",
+                          "value": {"byte":15,"bytelength":1,"type":"integer"}
+                      }
+                  ]
+              },
+              {
+                  "case": "$default",
+                  "do": []
+              }
+          ]
+      }
+  ]
+}

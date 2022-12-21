@@ -1,0 +1,75 @@
+{
+    "sense":
+    [
+        {
+            "switch": "$payloadLength",
+            "on":
+            [
+                {
+                    "case": 5,
+                    "do":
+                    [
+                        {
+                            "asset": "battery-voltage",
+                            "value":
+                            {
+                                "byte": 1,
+                                "bytelength": 2,
+                                "type": "integer",
+                                "calculation": "val / 1000"
+                            }
+                        },
+                        {
+                            "asset": "occupancy",
+                            "value":
+                            {
+                                "byte": 4,
+                                "bytelength": 1,
+                                "type": "integer"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "case": 7,
+                    "do":
+                    [
+                        {
+                            "asset": "internal-temperature",
+                            "value":
+                            {
+                                "byte": 1,
+                                "bytelength": 2,
+                                "type": "integer",
+                                "calculation": "val / 10"
+                            }
+                        },
+                        {
+                            "asset": "external-temperature",
+                            "value":
+                            {
+                                "byte": 4,
+                                "bytelength": 1,
+                                "type": "integer",
+                                "calculation": "val / 10"
+                            }
+                        },
+                        {
+                            "asset": "occupancy",
+                            "value":
+                            {
+                                "byte": 6,
+                                "bytelength": 1,
+                                "type": "integer"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "case": "$default",
+                    "do": []
+                }
+            ]
+        }
+    ]
+}
