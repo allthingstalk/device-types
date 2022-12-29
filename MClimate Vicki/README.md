@@ -5,13 +5,13 @@
 | Name | Title | Type   | Kind   | Unit | Advanced |
 |-------|-------|--------|--------|------|------|
 | uplinkType | Uplink Type | Integer | Actuator |  |  |
-| temperatureRange | Temperature Range | Object | Actuator |  | { min: Integer, max: Integer } |
+| temperatureRange | [Temperature Range](https://docs.mclimate.eu/mclimate-lorawan-devices/devices/mclimate-vicki-lorawan/vicki-lorawan-device-communication-protocol/target-temperature-ranges) | Object | Actuator |  | { min: Integer, max: Integer } |
 | targetTemperature | Target Temperature | Number | Actuator |  |  |
 | operationalMode | Operational Mode | Integer | Actuator | |  |
-| keepAliveTime | KeepAlive Time | Integer | Actuator | |  |
-| joinRetryPeriod | Join Retry Period | Integer | Actuator | minutes |  |
+| keepAliveTime | [KeepAlive Time](https://docs.mclimate.eu/mclimate-lorawan-devices/devices/mclimate-vicki-lorawan/vicki-lorawan-device-communication-protocol/keep-alive) | Integer | Actuator | |  |
+| joinRetryPeriod | [Join Retry Period](https://docs.mclimate.eu/mclimate-lorawan-devices/devices/mclimate-vicki-lorawan/vicki-lorawan-device-communication-protocol/network-related-settings) | Integer | Actuator | minutes |  |
 | internalAlgoTdiffParams | Internal Algorithm Tdiff Parameters | Object | Actuator | | { cold: Integer, warm: Integer } |
-| childLock | Child Lock | Boolean | Actuator | | |
+| childLock | [Child Lock](https://docs.mclimate.eu/mclimate-lorawan-devices/devices/mclimate-vicki-lorawan/vicki-lorawan-device-communication-protocol/child-lock) | Boolean | Actuator | | |
 | reason | Uplink Reason | Number | Sensor | |  |
 | sensorTemperature | Sensor Temperature | Number | Sensor | C |  |
 | relativeHumidity | Relative Humidity | Number | Sensor | % |  |
@@ -22,15 +22,12 @@
 | highMotorConsumption | High Motor Consumption | Boolean | Sensor | |  |
 | lowMotorConsumption | Low Motor Consumption | Boolean | Sensor | |  |
 | brokenSensor | Broken Sensor | Boolean | Sensor | |  |
-| deviceVersions | Device Versions | Object | Sensor | | { hardware: Number, software: Number } |
-| openWindowParams | Window Open Parameters | Object | Actuator | | { enabled: Boolean, duration: Integer, motorPosition: Integer, delta: Number } | 
+| deviceVersions | [Device Versions](https://docs.mclimate.eu/mclimate-lorawan-devices/devices/mclimate-vicki-lorawan/vicki-lorawan-device-communication-protocol/read-device-hardware-and-software-version-command-explanation.) | Object | Sensor | | { hardware: Number, software: Number } |
+| openWindowParams | [Window Open Parameters](https://docs.mclimate.eu/mclimate-lorawan-devices/devices/mclimate-vicki-lorawan/vicki-lorawan-device-communication-protocol/open-window-detection) | Object | Actuator | | { enabled: Boolean, duration: Integer, motorPosition: Integer, delta: Number } | 
 | internalAlgoParams | Internal Algorithm Parameters | Object | Sensor | | { period: Integer, pFirstLast: Integer, pNext: Integer } |
 | watchDogParams | Watchdog Parameters | Object | Sensor | | { wdpC: TODO, wdpUc: TODO } |
 | primaryOperationalMode | Primary Operational Mode | Number | Sensor | | |
-| batteryRangeBoundaries | Battery Range Boundaries | Object | Sensor | | { Boundary1: Integer, Boundary2: Integer, Boundary3: Integer } |
-| batteryRangesOverVoltage | Battery Over-Voltage Ranges | Object | Sensor | | { Range1: Integer, Range2: Integer, Range3: Integer } |
-| OVAC | OVAC | Integer | Sensor | | |
-| manualTargetTemperatureUpdate | Manual Target Temperature Update | Integer | Sensor | | |
+| manualTargetTemperatureUpdate | Manual Target Temperature Set (by hand) | Integer | Sensor | | |
 | proportionalAlgoParams | Proportional Algorithm Parameters | Object | Sensor | | { coefficient: Integer, period: Integer } |
 | algoType | Algorithm Type | Integer | Sensor | | |
 | forceCloseValve | Force Close Valve | Boolean | Actuator | | |
