@@ -25,7 +25,7 @@
 | deviceVersions | [Device Versions](https://docs.mclimate.eu/mclimate-lorawan-devices/devices/mclimate-vicki-lorawan/vicki-lorawan-device-communication-protocol/read-device-hardware-and-software-version-command-explanation.) | Object | Sensor | | { hardware: Number, software: Number } |
 | openWindowParams | [Window Open Parameters](https://docs.mclimate.eu/mclimate-lorawan-devices/devices/mclimate-vicki-lorawan/vicki-lorawan-device-communication-protocol/open-window-detection) | Object | Actuator | | { enabled: Boolean, duration: Integer, motorPosition: Integer, delta: Number } | 
 | internalAlgoParams | Internal Algorithm Parameters | Object | Sensor | | { period: Integer, pFirstLast: Integer, pNext: Integer } |
-| watchDogParams | Watchdog Parameters | Object | Sensor | | { wdpC: TODO, wdpUc: TODO } |
+| watchDogParams | Watchdog Parameters | Object | Sensor | | { wdpC: Number, wdpUc: Number } |
 | primaryOperationalMode | Primary Operational Mode | Number | Sensor | | |
 | manualTargetTemperatureUpdate | Manual Target Temperature Set (by hand) | Integer | Sensor | | |
 | proportionalAlgoParams | Proportional Algorithm Parameters | Object | Sensor | | { coefficient: Integer, period: Integer } |
