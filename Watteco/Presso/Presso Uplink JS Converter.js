@@ -997,7 +997,7 @@ function converter(code) {
                 var tab = [];
                 for (var i = 0; i < data_length; i++) {
                     tab.push({ label: brData["datas"][i]["data"]["label"], value: brData["datas"][i]["data"]["value"], date: brData["datas"][i]["date"] });
-                    att[brData["datas"][i]["data"]["label"]] = { value: brData["datas"][i]["data"]["value"] };
+                    att[brData["datas"][i]["data"]["label"]] = { value: brData["datas"][i]["data"]["value"], at: brData["datas"][i]["date"] };
                 }
 
                 decoded.data = tab;

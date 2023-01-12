@@ -883,7 +883,7 @@ function converter(code) {
                         stdData.value = (bytes[index] * 256 * 256 * 256 + bytes[index + 1] * 256 * 256 + bytes[index + 2] * 256 + bytes[index + 3]);
                         stdData.date = lDate;
                         tab.push(stdData);
-                        att.Index = { value: (bytes[index] * 256 * 256 * 256 + bytes[index + 1] * 256 * 256 + bytes[index + 2] * 256 + bytes[index + 3]) };
+                        att["Index" + (decoded.zclheader.endpoint + 1)] = { value: (bytes[index] * 256 * 256 * 256 + bytes[index + 1] * 256 * 256 + bytes[index + 2] * 256 + bytes[index + 3]) };
                     };
 
                     // binary input present value
@@ -892,7 +892,7 @@ function converter(code) {
                         stdData.value = bytes[index];
                         stdData.date = lDate;
                         tab.push(stdData);
-                        att.State = { value: bytes[index] };
+                        att["State" + (decoded.zclheader.endpoint + 1)] = { value: bytes[index] };
                     };
 
                     // lorawan message type
@@ -987,7 +987,7 @@ function converter(code) {
                 var tab = [];
                 for (var i = 0; i < data_length; i++) {
                     tab.push({ label: brData["datas"][i]["data"]["label"], value: brData["datas"][i]["data"]["value"], date: brData["datas"][i]["date"] });
-                    att[brData["datas"][i]["data"]["label"]] = { value: brData["datas"][i]["data"]["value"] };
+                    att[brData["datas"][i]["data"]["label"]] = { value: brData["datas"][i]["data"]["value"], at: brData["datas"][i]["date"] };
                 }
 
                 decoded.data = tab;
