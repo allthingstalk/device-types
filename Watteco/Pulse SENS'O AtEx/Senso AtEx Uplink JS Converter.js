@@ -789,7 +789,7 @@ function converter(code) {
         return bytes;
     }
 
-    function Decoder(bytes, port) {
+    function Decoder(bytes) {
 
         // Decode an uplink message from a buffer
         // (array) of bytes to an object of fields.
