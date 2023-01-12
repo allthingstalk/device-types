@@ -21,7 +21,6 @@
 `EF1301AA`  
 `D51201AA`
 
-
 ALIVE payload
 Payload example: `e61801aa`
 
