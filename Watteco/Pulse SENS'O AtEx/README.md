@@ -13,6 +13,7 @@
 | State3         | Input 3 State   | Integer | Sensor |      |
 | BatteryVoltage | Battery Voltage | Number  | Sensor | V    |
 | RawDownlink    | Raw Downlink (Configuration) | String | Actuator | |
+| zclheader      | ZCL Header | Object | Sensor | |
 
 
 # Example Payloads  
