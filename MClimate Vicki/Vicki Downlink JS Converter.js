@@ -72,8 +72,8 @@ function converter(code) {
         return toHex('ForceClose', 0x0B);
     };
 
+    // TODO: This function doesn't work for some reason, it only reports some of the parameters back.
     function getAllParams() {
-        // return toHex('GetAllParams', '14', '16', '17', '12', '13', '18', '19', '15', '1B');
         // 14 - Get child lock
         // 16 - Get internal temperature control algo params
         // 17 - Get internal temperature control algo params - Tdiff
@@ -83,7 +83,7 @@ function converter(code) {
         // 19 - Get network joiun retry period
         // 15 - Get temperature ranges
         // 1B - Get uplink messages type
-        return "14161712131819151B" // The above doesn't work for some reason, let's see if this one helps
+        return toHex('GetAllParams', '14', '16', '17', '12', '13', '18', '19', '15', '1B');
     };
 
     // function getChildLock() {
