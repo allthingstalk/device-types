@@ -10,7 +10,6 @@
 | 0-10V                | 0-10V Analog Input | Number | Sensor | mV |
 | BatteryVoltage       | Battery Voltage | Number | Sensor | V |
 | ExternalPowerVoltage | External Power Voltage | Number | Sensor | V |
-| Index | Index | Number | Sensor |      |
 | zclheader | ZLC Header | Object | Sensor |      |
 | RawDownlink | Raw Downlink (Configuration) | String | Actuator | |
 
