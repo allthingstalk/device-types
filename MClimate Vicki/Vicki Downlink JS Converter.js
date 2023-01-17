@@ -40,6 +40,9 @@ function converter(code) {
     if ('getAllParams' in given_obj) {
         return getAllParams();
     }
+    if ('RawDownlink' in given_obj) {
+        return given_obj.RawDownlink.value;
+    }
 
 
     function decToHex(integer) {
