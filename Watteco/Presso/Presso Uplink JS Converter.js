@@ -928,17 +928,17 @@ function converter(code) {
                         }
                         if ((bytes[index + 2] & 0x02) === 0x02) { 
                             decoded.data.rechargeable_battery_voltage = (bytes[index2] * 256 + bytes[index2 + 1]) / 1000; 
-                            att.rechargeable_battery_voltage = decoded.data.rechargeable_battery_voltage;
+                            att.rechargeable_battery_voltage = { value: decoded.data.rechargeable_battery_voltage };
                             index2 = index2 + 2; 
                         }
                         if ((bytes[index + 2] & 0x08) === 0x08) { 
                             decoded.data.solar_harvesting_voltage = (bytes[index2] * 256 + bytes[index2 + 1]) / 1000; 
-                            att.solar_harvesting_voltage = decoded.data.solar_harvesting_voltage;
+                            att.solar_harvesting_voltage = { value: decoded.data.solar_harvesting_voltage };
                             index2 = index2 + 2; 
                         }
                         if ((bytes[index + 2] & 0x10) === 0x10) { 
                             decoded.data.tic_harvesting_voltage = (bytes[index2] * 256 + bytes[index2 + 1]) / 1000; 
-                            att.tic_harvesting_voltage = decoded.data.tic_harvesting_voltage;
+                            att.tic_harvesting_voltage = { value: decoded.data.tic_harvesting_voltage };
                             index2 = index2 + 2; 
                         }
                     }
