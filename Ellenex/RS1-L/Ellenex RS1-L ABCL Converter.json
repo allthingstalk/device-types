@@ -1,0 +1,64 @@
+{
+    "sense": [
+        { 
+            "switch": { "byte": 2 },
+            "on": [
+                {
+                    "case": 0, "comment": "Normal Sensor Payload", "do": [
+                        {
+                            "asset": "SensorReading",
+                            "value": {"byte": 3, "bytelength": 2, "type": "integer", "calculation": "val / 100"}
+                        },
+                        {
+                            "asset": "TemperatureReading",
+                            "value": {"byte": 5, "bytelength": 2, "type": "integer", "calculation": "val / 100"}
+                        },
+                        {
+                            "asset": "Battery",
+                            "value": {"byte": 7, "bytelength": 1, "type": "integer", "calculation": "val / 10"}
+                        }
+                    ]
+                },
+                {
+                    "case": 1, "comment": "Configuration Event Message", "do": [
+                        {
+                            "asset": "SamplingTime",
+                            "value": {"byte": 3, "bytelength": 2, "type": "integer"}
+                        },
+                        {
+                            "asset": "Battery",
+                            "value": {"byte": 5, "bytelength": 1, "type": "integer", "calculation": "val / 10"}
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "actuate": [
+        {
+            "const": 1,
+            "field": {"byte": 0},
+            "comment": "First byte is always 0"
+        },
+        {
+            "const": 0,
+            "field": {"byte": 1},
+            "comment": "Second byte is always 0"
+        },
+        {
+            "const": 0,
+            "field": {"byte": 2},
+            "comment": "Third byte is always 0"
+        },
+        {
+            "const": 1,
+            "field": {"byte": 3},
+            "comment": "Fourth byte needs to be set to 1 for minutes or 0 for seconds"
+        },
+        {
+            "asset": "SamplingTime",
+            "field": {"byte": 4, "type": "integer"},
+            "comment": "Minimum sleep period is 60 seconds"
+        }
+    ]
+}
