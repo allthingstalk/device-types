@@ -1,6 +1,7 @@
 # Ellenex RS1-L
 
 [Manufacturer's Website](https://www.ellenex.com/products/rs1-l)
+[Manufacturer's Datasheet](https://www.ellenex.com/_files/ugd/dc15ca_0859bec0e0b74445bbf33f66471379f7.pdf)
 
 ## Assets
 
