@@ -1,0 +1,141 @@
+{
+  "sense": [
+    {
+      "asset": "location",
+      "value": {
+        "latitude": {
+          "json": "Lat"
+        },
+        "longitude": {
+          "json": "Long"
+        },
+        "accuracy": {
+          "json": "PosAcc"
+        }
+      },
+      "at": {
+        "json": "GpsUTC"
+      }
+    },
+    {
+      "asset": "altitude",
+      "value": {
+        "json": "Alt"
+      },
+      "at": {
+        "json": "GpsUTC"
+      }
+    },
+    {
+      "asset": "location-accuracy",
+      "value": {
+        "json": "PosAcc"
+      },
+      "at": {
+        "json": "GpsUTC"
+      }
+    },
+    {
+      "asset": "speed",
+      "value": {
+        "json": "Spd",
+        "calculation": "val*0.036"
+      },
+      "at": {
+        "json": "GpsUTC"
+      }
+    },
+    {
+      "asset": "speed-accuracy",
+      "value": {
+        "json": "SpdAcc",
+        "calculation": "val*0.36"
+      },
+      "at": {
+        "json": "GpsUTC"
+      }
+    },
+    {
+      "asset": "gpsstat",
+      "value": {
+        "json": "GpsStat",
+        "calculation": "val"
+      },
+      "at": {
+        "json": "GpsUTC"
+      }
+    },
+    {
+      "asset": "heading",
+      "value": {
+        "json": "Head",
+        "calculation": "val*2.0"
+      },
+      "at": {
+        "json": "GpsUTC"
+      }
+    },
+    {
+      "asset": "digital-input-1",
+      "value": {
+        "json": "DIn"
+      },
+      "at": {
+        "json": "GpsUTC"
+      }
+    },
+    {
+      "asset": "internal-battery-voltage",
+      "value": {
+        "json": "FType6.AnalogueData.1",
+        "calculation": "val/1000"
+      },
+      "at": {
+        "json": "DateUTC"
+      }
+    },
+    {
+      "asset": "external-voltage",
+      "value": {
+        "json": "FType6.AnalogueData.2",
+        "calculation": "val/10000"
+      },
+      "at": {
+        "json": "DateUTC"
+      }
+    },
+    {
+      "asset": "internal-temperature",
+      "value": {
+        "json": "FType6.AnalogueData.3",
+        "calculation": "val/100"
+      },
+      "at": {
+        "json": "DateUTC"
+      }
+    },
+    {
+      "asset": "gsm-signal-strength",
+      "value": {
+        "json": "FType6.AnalogueData.4",
+        "calculation": "val"
+      },
+      "at": {
+        "json": "DateUTC"
+      }
+    },
+    {
+      "asset": "recovery",
+      "value": {
+        "json": "FType2.DevStat[7]"
+      },
+      "at": {
+        "json": "DateUTC"
+      }
+    },
+    {
+      "asset": "reset",
+      "value": false
+    }
+  ]
+}
