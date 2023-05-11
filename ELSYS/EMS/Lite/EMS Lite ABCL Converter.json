@@ -10,7 +10,7 @@
                     "do":
                     [
                         {
-                            "asset": "water-leak",
+                            "asset": "water_leak",
                             "value":
                             {
                                 "byte": 1,
@@ -54,7 +54,7 @@
                             }
                         },
                         {
-                            "asset": "water-leak",
+                            "asset": "water_leak",
                             "value":
                             {
                                 "byte": 9,

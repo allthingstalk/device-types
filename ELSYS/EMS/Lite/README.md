@@ -8,7 +8,7 @@ LoRaWAN leak detection sensor with temperature and humidity sensors as well.
 ## Assets
 | Name        | Title           | Unit | Data Type | Asset Type |                                                     |
 | ----------- | --------------- | ---- | --------- | ---------- | --------------------------------------------------- |
-| water-leak  | Water Leak      | -    | integer   | sensor     | The amount of water leakage detected (conductivity) |
+| water_leak  | Water Leak      | -    | integer   | sensor     | The amount of water leakage detected (conductivity) |
 | temperature | Temperature     | °C   | numberr   | sensor     | Ambient temperature                                 |
 | humidity    | Humidity        | %    | integer   | sensor     | Ambient humidity                                    |
 | battery     | Battery Voltage | V    | number    | sensor     | Battery voltage level                               |

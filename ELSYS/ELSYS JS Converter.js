@@ -113,12 +113,10 @@ function converter(code) {
                 i += 2;
                 break
             case TYPE_EXT_DIGITAL: //Digital input
-                obj.digital = {value: (data[i + 1])};
-                raw_value = (data[i + 1]);
-                if (raw_value == 0) {
-                    obj.digital_binary = {value: "false"};
-                } else if (raw_value == 1) {
-                    obj.digital_binary = {value: "true"};
+                if (data[i + 1] == 0) {
+                    obj.digital = {value: "false"};
+                } else if (data[i + 1] == 1) {
+                    obj.digital = {value: "true"};
                 }
                 i += 1;
                 break
@@ -135,8 +133,8 @@ function converter(code) {
                 iTemp = bin16dec(iTemp);
                 var eTemp = (data[i + 3] << 8) | (data[i + 4]);
                 eTemp = bin16dec(eTemp);
-                obj.irInternalTemperature = {value: iTemp / 10}
-                obj.irExternalTemperature = {value: eTemp / 10}
+                obj.ir_internal_temperature = {value: iTemp / 10}
+                obj.ir_external_temperature = {value: eTemp / 10}
                 i += 4;
                 break
             case TYPE_OCCUPANCY: //Body occupancy
@@ -144,7 +142,7 @@ function converter(code) {
                 i += 1;
                 break
             case TYPE_WATERLEAK: //Water leak
-                obj.waterleak = {value: (data[i + 1])};
+                obj.water_leak = {value: (data[i + 1])};
                 i += 1;
                 break
             case TYPE_GRIDEYE: //Grideye data

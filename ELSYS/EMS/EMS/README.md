@@ -11,11 +11,11 @@ celeration sensors + NFC for configuration.
 | Name            | Title                      | Unit | Data Type | Asset Type | Description                                                    |
 | --------------- | -------------------------- | ---- | --------- | ---------- | -------------------------------------------------------------- |
 | digital         | Digital                    | -    | boolean   | sensor     | Door reed switch sensor                                        |
-| water-leak      | Water Leak                 | -    | integer   | sensor     | Water leak pads on the bottom of the device                    |
+| water_leak      | Water Leak                 | -    | integer   | sensor     | Water leak pads on the bottom of the device                    |
 | temperature     | Temperature                | °C   | number    | sensor     | Ambient temperature                                            |
 | humidity        | Humidity                   | %    | integer   | sensor     | Ambient humidity                                               |
-| position        | Position (Object: X, Y, Z) | -    | object    | sensor     | Position in space, XYZ axis                                    |
+| acceleration        | Acceleration | -    | object    | sensor     | Acceleration in on XYZ axis, needs to be an object                                    |
 | battery         | Battery Voltage            | V    | number    | sensor     | Voltage of the battery                                         |
 | motion          | Motion                     | -    | integer   | sensor     | The amount of motion detected (CHECK THIS?)                    |
-| pulse-count-abs | Pulse Count (ABS)          | -    | integer   | sensor     | Amount of times the door has been opened (digital asset above) |
+| pulse_count_abs | Pulse Count (Absolute)          | -    | integer   | sensor     | Amount of times the door has been opened (digital asset above) |
 

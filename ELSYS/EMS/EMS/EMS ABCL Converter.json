@@ -27,7 +27,7 @@
                                     "case": 18,
                                     "do":
                                     [
-                                        {"asset":"water-leak","value":{"byte":1,"type":"integer"}}
+                                        {"asset":"water_leak","value":{"byte":1,"type":"integer"}}
                                     ]
                                 },
                                 {
@@ -62,7 +62,7 @@
                             }
                         },
                         {
-                            "asset": "position",
+                            "asset": "acceleration",
                             "value":
                             {
                                 "x":
@@ -96,7 +96,7 @@
                             }
                         },
                         {
-                            "asset": "pulse-count-abs",
+                            "asset": "pulse_count_abs",
                             "value":
                             {
                                 "byte": 13,
@@ -123,7 +123,7 @@
                             }
                         },
                         {
-                            "asset": "water-leak",
+                            "asset": "water_leak",
                             "value":
                             {
                                 "byte": 22,

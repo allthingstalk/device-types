@@ -10,7 +10,7 @@
                     "do":
                     [
                         {
-                            "asset": "battery-voltage",
+                            "asset": "battery",
                             "value":
                             {
                                 "byte": 1,
@@ -35,7 +35,7 @@
                     "do":
                     [
                         {
-                            "asset": "internal-temperature",
+                            "asset": "ir_internal_temperature",
                             "value":
                             {
                                 "byte": 1,
@@ -45,7 +45,7 @@
                             }
                         },
                         {
-                            "asset": "external-temperature",
+                            "asset": "ir_external_temperature",
                             "value":
                             {
                                 "byte": 4,

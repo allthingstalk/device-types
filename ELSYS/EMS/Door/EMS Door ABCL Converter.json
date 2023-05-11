@@ -25,7 +25,7 @@
                     "do":
                     [
                         {
-                            "asset": "position",
+                            "asset": "acceleration",
                             "value":
                             {
                                 "x":
@@ -56,7 +56,7 @@
                             }
                         },
                         {
-                            "asset": "pulse-count-abs",
+                            "asset": "pulse_count_abs",
                             "value":
                             {
                                 "byte": 8,
