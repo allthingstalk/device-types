@@ -14,7 +14,7 @@ Occupancy Payload Definition:
 | Name                 | Title                | Unit | Data Type | Asset Type | Description                                                                          |
 | -------------------- | -------------------- | ---- | --------- | ---------- | ------------------------------------------------------------------------------------ |
 | occupancy            | Occupancy            | -    | integer   | sensor     | Occupancy, where 1 is entering/leaving and 2 is occupied                             |
-| ir_internal_temperature | Internal Temperature | °C   | integer   | sensor     | Internal temperature of the sensor. Probably used to calibrate the occupancy sensor. |
-| ir_external_temperature | External Temperature | °C   | integer   | sensor     | External temperature (TODO - REPORTED THAT IT DOESNT EXIST)                          |
+| ir_internal_temperature | IR Internal Temperature | °C   | integer   | sensor     | Internal temperature of the sensor. Probably used to calibrate the occupancy sensor. |
+| ir_external_temperature | IR External Temperature | °C   | integer   | sensor     | External temperature (TODO - REPORTED THAT IT DOESNT EXIST)                          |
 | battery      | Battery Voltage      | V    | number    | sensor     | Voltage of the battery                                                              |
 

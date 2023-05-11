@@ -125,7 +125,7 @@ function converter(code) {
                 i += 2;
                 break
             case TYPE_ACC_MOTION: //Acc motion
-                obj.accMotion = {value: (data[i + 1])};
+                obj.acc_motion = {value: (data[i + 1])};
                 i += 1;
                 break
             case TYPE_IR_TEMP: //IR temperature

@@ -8,12 +8,23 @@ Indoor LoRaWAN contact sensor for detecting door open/closing with an accelerome
 ## Assets
 | Name            | Title             | Unit | Data Type | Asset Type | Description                                                     |
 | --------------- | ----------------- | ---- | --------- | ---------- | --------------------------------------------------------------- |
-| digital         | Digital           | -    | boolean   | sensor     | Door sensor (reed switch)                                       |
+| digital         | Door Closed        | -    | boolean   | sensor     | Door sensor (reed switch)                                       |
 | acceleration        | Acceleration          | -    | object    | sensor     | Acceleration in space. The asset is an object with X, Y and Z axis. |
-| motion          | Motion            | -    | integer   | sensor     | Amount of motion detected by the accelerometer                  |
-| pulse_count_abs | Pulse Count (Absolute) | -    | integer   | sensor     | Amount of times the door has been opened.                       |
+| acc_motion          | Accelerometer Motion       | -    | integer   | sensor     | Amount of motion detected by the accelerometer                  |
+| pulse_count_abs | Total Door Cycles | -    | integer   | sensor     | Amount of times the door has been opened.                       |
 | battery         | Battery Voltage   | V    | number    | sensor     | Battery voltage reading                                         |
 
+Acceleration Profile Type:
+```
+{
+  "type": "object",
+  "properties": {
+    "x": {"type": "integer"},
+    "y": {"type": "integer"},
+    "z": {"type": "integer"}
+  }
+}
+```
 
 ## Example Payloads
 `03013FFA070E0F0B000007F40D010F00`  

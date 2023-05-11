@@ -114,7 +114,7 @@
                             }
                         },
                         {
-                            "asset": "motion",
+                            "asset": "acc_motion",
                             "value":
                             {
                                 "byte": 20,
