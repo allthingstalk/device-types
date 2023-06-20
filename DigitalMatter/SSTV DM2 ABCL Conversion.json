@@ -1,0 +1,90 @@
+{
+    "sense": [
+        {
+            "asset": "location",
+            "value": {
+                "latitude": {
+                    "json": "Lat"
+                },
+                "longitude": {
+                    "json": "Long"
+                },
+                "accuracy": {
+                    "json": "PosAcc"
+                }
+            },
+            "at": {
+                "json": "GpsUTC"
+            }
+        },
+        {
+            "asset": "altitude",
+            "value": {
+                "json": "Alt"
+            },
+            "at": {
+                "json": "GpsUTC"
+            }
+        },
+        {
+            "asset": "location-accuracy",
+            "value": {
+                "json": "PosAcc"
+            },
+            "at": {
+                "json": "GpsUTC"
+            }
+        },
+        {
+            "asset": "speed",
+            "value": {
+                "json": "Spd",
+                "calculation": "val*0.036"
+            },
+            "at": {
+                "json": "GpsUTC"
+            }
+        },
+        {
+            "asset": "battery-voltage",
+            "value": {
+                "json": "FType6.AnalogueData.1",
+                "calculation": "val/1000"
+            },
+            "at": {
+                "json": "DateUTC"
+            }
+        },
+        {
+            "asset": "digital_input_1",
+            "value": {
+                "json": "FType2.DIn[1]"
+            },
+            "at": {
+                "json": "DateUTC"
+            }
+        },
+        {
+            "asset": "digital_input_2",
+            "value": {
+                "json": "FType2.DIn[2]"
+            },
+            "at": {
+                "json": "DateUTC"
+            }
+        },
+        {
+            "asset": "recovery",
+            "value": {
+                "json": "FType2.DevStat[7]"
+            },
+            "at": {
+                "json": "DateUTC"
+            }
+        },
+        {
+            "asset": "reset",
+            "value": false
+        }
+    ]
+}
