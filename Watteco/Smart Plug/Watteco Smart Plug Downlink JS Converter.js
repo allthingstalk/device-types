@@ -13,7 +13,7 @@ function converter(code) {
         //     value = 0x02;
         // }
         var bytes = [0x11, 0x50, 0x00, 0x06, value];
-        return bytes;
+        return bytes.toString(16);
     }
     if ('RawDownlink' in given_obj) {
         return given_obj.RawDownlink.value;

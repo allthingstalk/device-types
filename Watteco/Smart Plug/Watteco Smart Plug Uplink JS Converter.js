@@ -1004,7 +1004,7 @@ function converter(code) {
             }
         }
         att.zclheader = { value: decoded.zclheader };
-        return decoded;
+        return att;
     }
     return JSON.stringify(Decoder(hexToBytes(code)));
 }
