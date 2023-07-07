@@ -26,6 +26,20 @@
 | RawDownlink        | Raw Downlink (Configuration)     | String  | Actuator |         |
 | zclheader          | ZCL Header                       | Object  | Sensor   |         |
 
+# Configuring the Device
+- Go to [lora.watteco.fr/Lora/](https://lora.watteco.fr/Lora/)
+- Choose tab "Encoder assistant"
+- Choose product "SmartPlug 50-70-003"
+- Choose a function (for example "Power Quality Cluster - Configure Reporting")
+- Set your desired values
+- Choose output format "Frame" 
+- Copy the outputted frame
+- Go to your device on AllThingsTalk/ALSO IoT Platform
+- Click the "Raw Downlink (Configuration)" asset
+- In the "Command" field, paste the copied frame inbetween "" so the final command looks like: `{ "value": "YOUR_COPIED_FRAME" }`
+- Send the command to your device by clicking the checkmark icon
+- Your device will reconfigure itself soon
+
 # Example Payloads  
 `100160A8041800003010A41AAAA11AAA3101`  
 `100340E80C1D00A02D10A41AAAA11AAA3100`  
