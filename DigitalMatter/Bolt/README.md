@@ -14,7 +14,6 @@
 | Trip Duration | trip_duration | sensor | number | min | |
 | Location Accuracy | location-accuracy | sensor | number | m |  |
 | Speed | speed | sensor | number | km/h |  |
-| Altitude | altitude | sensor | number | m |  |
 | Location | location | sensor | object |  | {"type":"object","properties":{"latitude":{"type":"number"},"longitude":{"type":"number"},"altitude":{"type":"number"},"accuracy":{"type":"number"}}} |
 
 Changes: 
