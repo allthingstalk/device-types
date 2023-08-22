@@ -4,6 +4,7 @@
 | Title | Name | Type | Profile | Unit | Extra |
 |---|---|---|---|---|---|
 | Altitude | altitude | sensor | number | m | |  
+| Reason | reason | sensor | number | | |
 | Internal Battery Voltage | analogue_data_1 | sensor | number | V | |
 | External Voltage | analogue_data_2 | sensor | number | V | |
 | Ignition | din_0 | sensor | boolean | | |
@@ -26,3 +27,4 @@ Changes:
 - Asset `analog_data_5` renamed to `analogue_data_5`
 - Asset `odo` renamed to `odometer`
 - Asset `rh` renamed to `run_hours`
+- Asset `reason` added

@@ -5,6 +5,7 @@
 | Title | Name | Type | Profile | Unit | Extra |
 |---|---|---|---|---|---|
 | Altitude | altitude | sensor | number | m | |  
+| Reason | reason | sensor | number | | |
 | External Voltage | analogue_data_2 | sensor | number | V | |
 | Ignition | din_0 | sensor | boolean | | |
 | Odometer | odometer | sensor | number | km | |
@@ -23,3 +24,4 @@ Changes:
 - Asset `temperature` renamed to `analogue_data_3`
 - Asset `trip-distance` renamed to `trip_distance`
 - Asset `trip-duration` renamed to `trip_duration`
+- Asset `reason` added

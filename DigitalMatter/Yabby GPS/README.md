@@ -3,6 +3,7 @@
 ## Asset List (new integration - no ABCL)
 | Title | Name | Type | Profile | Unit | Extra |
 |---|---|---|---|---|---|
+| Reason | reason | sensor | number | | |
 | Battery Voltage | analogue_data_1 | sensor | number | V |  |
 | Location Accuracy | location-accuracy | sensor | number | m |  |
 | Speed | speed | sensor | number | km/h |  |
@@ -13,3 +14,4 @@ Changes:
 - Asset `recovery` removed
 - Asset `reset` removed
 - Asset `battery-voltage` renamed to `analogue_data_1`
+- Asset `reason` added

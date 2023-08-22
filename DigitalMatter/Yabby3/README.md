@@ -18,6 +18,7 @@
 
 | Title | Name | Type | Profile | Unit | Extra |
 |---|---|---|---|---|---|
+| Reason | reason | sensor | number | | |
 | Battery Voltage | analogue_data_1 | sensor | number | V |  |
 | Altitude | altitude | sensor | number | m |  |
 | Location Accuracy | location-accuracy | sensor | number | m |  |
@@ -28,3 +29,4 @@ Changes:
 - Asset `recovery` removed
 - Asset `reset` removed
 - Asset `battery-voltage` renamed to `analogue_data_1`
+- Asset `reason` added

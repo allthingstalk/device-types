@@ -3,6 +3,7 @@
 ## Asset List (new integration, no ABCL)
 | Title | Name | Type | Profile | Unit | Extra |
 |---|---|---|---|---|---|
+| Reason | reason | sensor | number | | |
 | Altitude | altitude | sensor | number | m | |  
 | Internal Battery Voltage | analogue_data_1 | sensor | number | V | |
 | External Voltage | analogue_data_2 | sensor | number | V | |
@@ -26,3 +27,4 @@ Changes:
 - Asset `analog_data_5` renamed to `analogue_data_5`
 - Asset `odo` renamed to `odometer`
 - Asset `rh` renamed to `run_hours`
+- Asset `reason` added

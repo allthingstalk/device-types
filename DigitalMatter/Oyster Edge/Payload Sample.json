@@ -1,0 +1,46 @@
+{
+    "date": "2023-05-19T07:13:18Z",
+    "device": {
+        "sn": "000000",
+        "prod": 92,
+        "rev": 2,
+        "fw": "1.6",
+        "iccid": "0000000000000000000",
+        "imei": "000000000000000"
+    },
+    "sqn": 129,
+    "reason": 50,
+    "analogues": [
+        {
+            "id": 1,
+            "val": 5335
+        },
+        {
+            "id": 3,
+            "val": 2200
+        },
+        {
+            "id": 4,
+            "val": 5
+        },
+        {
+            "id": 5,
+            "val": 5296
+        }
+    ],
+    "inputs": 2,
+    "outputs": 0,
+    "status": 258,
+    "fields": {
+        "taglist": {
+            "tags": [
+                {
+                    "tt": 255,
+                    "reason": 0,
+                    "rssi": -31,
+                    "data": "BABkLdh52voYBRIMSU7///6w/fT85Le2Q+GW+tp52C1k"
+                }
+            ]
+        }
+    }
+}
