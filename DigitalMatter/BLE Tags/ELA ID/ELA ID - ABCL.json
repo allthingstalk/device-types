@@ -1,0 +1,33 @@
+{
+    "name": "ELA ID BLE Tag ABCL Deocoder",
+    "comment": "Untested, work in progress. Digital Matter Tag Type 14.",
+    "version": "0.0.2",
+    "sense": [
+      {
+        "asset": "unique_hardware_identifier",
+        "comment": "MAC Address",
+        "value": {
+          "byte": 0,
+          "bytelength": 6,
+          "byteorder": "little",
+          "type": "hexstring"
+        }
+      },
+      {
+        "asset": "tag_name",
+        "value": {
+          "byte": 6,
+          "bytelength": 15,
+          "type": "string"
+        }
+      },
+      {
+        "asset": "manufacturer_id",
+        "value": {
+          "byte": 21,
+          "bytelength": 6,
+          "type": "integer"
+        }
+      }
+    ]
+  }

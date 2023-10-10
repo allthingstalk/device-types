@@ -1,0 +1,49 @@
+{
+    "name": "ELA ANG BLE Tag ABCL Decoder",
+    "comment": "Untested, work in progress. Digital Matter Tag Type 13.",
+    "version": "0.0.1",
+    "sense": [
+      {
+        "asset": "unique_hardware_identifier",
+        "comment": "MAC Address",
+        "value": {
+          "byte": 0,
+          "bytelength": 6,
+          "byteorder": "little",
+          "type": "hexstring"
+        }
+      },
+      {
+        "asset": "tag_name",
+        "value": {
+          "byte": 6,
+          "bytelength": 15,
+          "type": "string"
+        }
+      },
+      {
+        "asset": "x_axis_acceleration",
+        "value": {
+          "byte": 21,
+          "bytelength": 2,
+          "type": "integer"
+        }
+      },
+      {
+        "asset": "y_axis_acceleration",
+        "value": {
+          "byte": 23,
+          "bytelength": 2,
+          "type": "integer"
+        }
+      },
+      {
+        "asset": "z_axis_acceleration",
+        "value": {
+          "byte": 25,
+          "bytelength": 2,
+          "type": "integer"
+        }
+      }
+    ]
+  }

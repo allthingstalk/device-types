@@ -1,0 +1,41 @@
+{
+    "name": "ELA MOV BLE Tag ABCL Decoder",
+    "comment": "Untested, work in progress. Digital Matter Tag Type 12.",
+    "version": "0.0.1",
+    "sense": [
+      {
+        "asset": "unique_hardware_identifier",
+        "comment": "MAC Address",
+        "value": {
+          "byte": 0,
+          "bytelength": 6,
+          "byteorder": "little",
+          "type": "hexstring"
+        }
+      },
+      {
+        "asset": "tag_name",
+        "value": {
+          "byte": 6,
+          "bytelength": 15,
+          "type": "string"
+        }
+      },
+      {
+        "asset": "move_count",
+        "value": {
+          "byte": 21,
+          "bytelength": 2,
+          "type": "integer"
+        }
+      },
+      {
+        "asset": "moving",
+        "value": {
+          "byte": 23,
+          "bit": 0,
+          "type": "boolean"
+        }
+      }
+    ]
+  }

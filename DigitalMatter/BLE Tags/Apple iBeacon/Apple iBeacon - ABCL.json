@@ -1,0 +1,40 @@
+{
+    "name": "Apple iBeacon ABCL Decoder",
+    "comment": "Untested, work in progress. Digital Matter Tag Type 1.",
+    "version": "0.0.2",
+    "sense": [
+      {
+        "asset": "unique_hardware_identifier",
+        "value": {
+          "byte": 0,
+          "bytelength": 16,
+          "byteorder": "big",
+          "signed": "false",
+          "type": "integer"
+        }
+      },
+      {
+        "asset": "major_id",
+        "value": {
+          "byte": 16,
+          "bytelength": 2,
+          "type": "integer"
+        }
+      },
+      {
+        "asset": "minor_id",
+        "value": {
+          "byte": 18,
+          "bytelength": 2,
+          "type": "integer"
+        }
+      },
+      {
+        "asset": "calibrated_tx_power",
+        "value": {
+          "byte": 20,
+          "type": "integer"
+        }
+      }
+    ]
+  }

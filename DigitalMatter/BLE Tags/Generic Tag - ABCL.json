@@ -1,0 +1,40 @@
+{
+    "name": "Generic Tag (from Digital Matter)",
+    "comment": "For development and testing purposes only. Tag Type 255.",
+    "version": "0.0.1",
+    "sense": [
+        {
+            "asset": "generic_tag_type",
+            "value": {
+                "byte": 0,
+                "bytelength": 2,
+                "type": "integer"
+            }
+        },
+        {
+            "asset": "unique_hardware_identifier",
+            "comment": "MAC Address",
+            "value": {
+                "byte": 0,
+                "bytelength": 6,
+                "byteorder": "big",
+                "type": "hexstring"
+            }
+        },
+        {
+            "asset": "data_length",
+            "value": {
+                "byte": 8,
+                "type": "integer"
+            }
+        },
+        {
+            "asset": "data",
+            "value": {
+                "byte": 9,
+                "bytelength": 50,
+                "type": "hexstring"
+            }
+        }
+    ]
+}
