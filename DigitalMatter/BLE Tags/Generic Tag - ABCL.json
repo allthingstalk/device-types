@@ -12,7 +12,7 @@
             }
         },
         {
-            "asset": "unique_hardware_identifier",
+            "asset": "hardwareUniqueId",
             "comment": "MAC Address",
             "value": {
                 "byte": 0,

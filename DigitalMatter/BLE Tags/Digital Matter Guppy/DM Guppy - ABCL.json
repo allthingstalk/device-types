@@ -4,7 +4,7 @@
     "version": "0.0.1",
     "sense": [
       {
-        "asset": "unique_hardware_identifier",
+        "asset": "hardwareUniqueId",
         "value": {
           "byte": 0,
           "bytelength": 4,

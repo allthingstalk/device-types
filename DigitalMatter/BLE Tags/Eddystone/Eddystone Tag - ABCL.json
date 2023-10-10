@@ -4,7 +4,8 @@
     "version": "0.0.1",
     "sense": [
       {
-        "asset": "namespace_id",
+        "asset": "hardwareUniqueId",
+        "comment": "This is the Namespace ID",
         "value": {
           "byte": 0,
           "bytelength": 10,
