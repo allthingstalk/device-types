@@ -1,10 +1,10 @@
 {
     "name": "ELA ANG BLE Tag ABCL Decoder",
     "comment": "Untested, work in progress. Digital Matter Tag Type 13.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "sense": [
       {
-        "asset": "hardwareUniqueId",
+        "asset": "hardware_unique_id",
         "comment": "MAC Address",
         "value": {
           "byte": 0,

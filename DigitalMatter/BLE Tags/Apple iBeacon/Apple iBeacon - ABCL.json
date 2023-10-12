@@ -1,16 +1,16 @@
 {
     "name": "Apple iBeacon ABCL Decoder",
     "comment": "Untested, work in progress. Digital Matter Tag Type 1.",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "sense": [
       {
-        "asset": "hardwareUniqueId",
+        "asset": "hardware_unique_id",
+        "comment": "UUID",
         "value": {
           "byte": 0,
           "bytelength": 16,
           "byteorder": "big",
-          "signed": "false",
-          "type": "integer"
+          "type": "hexstring"
         }
       },
       {

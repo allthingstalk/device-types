@@ -1,10 +1,11 @@
 {
     "name": "Digital Matter Guppy BLE Tag ABCL Decoder",
     "comment": "Untested, work in progress. Digital Matter Tag Type 0.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "sense": [
       {
-        "asset": "hardwareUniqueId",
+        "asset": "hardware_unique_id",
+        "comment": "Tag Serial Number",
         "value": {
           "byte": 0,
           "bytelength": 4,
@@ -16,6 +17,7 @@
         "asset": "tx_power",
         "value": {
           "byte": 4,
+          "calculation": "val * 10",
           "type": "integer"
         }
       },

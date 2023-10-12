@@ -1,10 +1,10 @@
 {
     "name": "Ingics iBS04 BLE Tag ABCL Decoder",
     "comment": "Untested, work in progress. Digital Matter Tag Type 10.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "sense": [
       {
-        "asset": "hardwareUniqueId",
+        "asset": "hardware_unique_id",
         "comment": "MAC Address",
         "value": {
           "byte": 0,
@@ -18,7 +18,7 @@
         "value": {
           "byte": 6,
           "bytelength": 2,
-          "calculation": "val * 10",
+          "calculation": "val / 10",
           "type": "number"
         }
       },
