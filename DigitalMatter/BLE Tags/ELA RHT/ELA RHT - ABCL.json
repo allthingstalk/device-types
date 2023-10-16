@@ -33,7 +33,7 @@
         "value": {
           "byte": 22,
           "bytelength": 2,
-          "calculation": "val / 100",
+          "calculation": "val / 1000",
           "type": "integer"
         }
       }
