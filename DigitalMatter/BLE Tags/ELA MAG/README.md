@@ -13,4 +13,5 @@
 | Location | location | virtual | object |  | {"type":"object","properties":{"latitude":{"type":"number"},"longitude":{"type":"number"},"altitude":{"type":"number"},"accuracy":{"type":"number"}}} |
 
 ## Example Payloads
+- `rV7yp9HYUCBNQUcgQzAzQTA3QQAAAAAA`
 - ``
