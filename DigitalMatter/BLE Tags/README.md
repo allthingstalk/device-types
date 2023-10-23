@@ -6,21 +6,21 @@ When a payload containing bluetooth tag data arrives from a Digital Matter devic
 
 | Tag Type (TT) | Name                              |
 |---------------|-----------------------------------|
-| 0             | Digital Matter Guppy              |
-| 1             | Apple iBeacon                     |
-| 2             | Eddystone                         |
-| 3             | Ingics iBS01 Basic                |
-| 4             | Ingics iBS01 Temperature/Humidity |
+| 0             | [Digital Matter Guppy](Digital%20Matter%20Guppy) |
+| 1             | [Apple iBeacon](Apple%20iBeacon)  |
+| 2             | [Eddystone](Eddystone)            |
+| 3             | [Ingics iBS01 Basic](Ingics%20iBS01%20Basic) |
+| 4             | [Ingics iBS01 Temperature/Humidity](Ingics%20iBS01%20Temperature%20and%20Humidity) |
 | 5             | Digital Matter SensorNode         |
 | 6             | Eddystone TLM Frame               |
 | 7             | Technoton ES7 Fuel Sensor         |
 | 8             | Geobox Ble TPMS Sensor            |
 | 9             | Escort Ble Fuel Sensor            |
-| 10            | Ingics iBS04                      |
-| 11            | ELA MAG                           |
-| 12            | ELA MOV                           |
-| 13            | ELA ANG                           |
-| 14            | ELA ID                            |
-| 15            | ELA T                             |
-| 16            | ELA RHT                           |
-| 255           | Generic Tag                       |
+| 10            | [Ingics iBS04](Ingics%20iBS04)    |
+| 11            | [ELA MAG](ELA%20MAG)              |
+| 12            | [ELA MOV](ELA%20MOV)              |
+| 13            | [ELA ANG](ELA%20ANG)              |
+| 14            | [ELA ID](ELA%20ID)                |
+| 15            | [ELA T](ELA%20T)                  |
+| 16            | [ELA RHT](ELA%20RHT)              |
+| 255           | [Generic Tag](Generic%20Tag)      |
