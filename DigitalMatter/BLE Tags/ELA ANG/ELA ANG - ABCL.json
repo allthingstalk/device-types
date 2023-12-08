@@ -26,6 +26,8 @@
         "value": {
           "byte": 21,
           "bytelength": 2,
+          "signed": true,
+          "byteorder": "little",
           "type": "integer"
         }
       },
@@ -34,6 +36,8 @@
         "value": {
           "byte": 23,
           "bytelength": 2,
+          "signed": true,
+          "byteorder": "little",
           "type": "integer"
         }
       },
@@ -42,6 +46,8 @@
         "value": {
           "byte": 25,
           "bytelength": 2,
+          "signed": true,
+          "byteorder": "little",
           "type": "integer"
         }
       }

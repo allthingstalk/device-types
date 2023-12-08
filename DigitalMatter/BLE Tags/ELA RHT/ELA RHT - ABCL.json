@@ -33,6 +33,8 @@
         "value": {
           "byte": 22,
           "bytelength": 2,
+          "signed": true,
+          "byteorder": "little",
           "calculation": "val / 1000",
           "type": "integer"
         }
