@@ -1,7 +1,7 @@
 {
     "name": "ELA RHT BLE Tag ABCL Decoder",
-    "comment": "Untested, work in progress. Digital Matter Tag Type 16.",
-    "version": "0.0.2",
+    "comment": "Digital Matter Tag Type 16.",
+    "version": "0.1",
     "sense": [
       {
         "asset": "hardware_unique_id",
