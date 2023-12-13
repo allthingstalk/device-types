@@ -35,7 +35,7 @@
           "bytelength": 2,
           "signed": true,
           "byteorder": "little",
-          "calculation": "val / 1000",
+          "calculation": "val / 100",
           "type": "integer"
         }
       }
