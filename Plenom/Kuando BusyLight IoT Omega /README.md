@@ -16,8 +16,8 @@
 | adr | Adaptive Data Rate | boolean | actuator | | |
 | rssi | Received Signal Strength Indicator | integer | sensor | dBm | |
 | snr | Signal to Noise Ratio | integer | sensor | dB | |
-| messages_received | Downlinks Received | integer | sensor | downlinks | |
-| messages_sent | Uplinks Sent | integer | sensor | uplinks | |
+| [messages_received](#asset-downlinks-received) | Downlinks Received | integer | sensor | downlinks | |
+| [messages_sent](#asset-uplinks-sent) | Uplinks Sent | integer | sensor | uplinks | |
 | sw_rev | Software Revision | integer | sensor | | |
 | hw_rev | Hardware Revision | integer | sensor | | |
 | factory_reset | Factory Reset | boolean | actuator | | |
