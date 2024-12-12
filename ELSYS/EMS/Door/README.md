@@ -1,5 +1,7 @@
 # ELSYS EMS Door
 
+> Device Type: `elsys/ems-door`  
+
 Indoor LoRaWAN contact sensor for detecting door open/closing with an accelerometer.
 
 [Operating Manual](https://elsys.se/public/manuals/Operating%20_Manual_EMS_Door.pdf)  

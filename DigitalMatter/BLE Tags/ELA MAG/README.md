@@ -1,6 +1,7 @@
 # ELA MAG Bluetooth Tag
 
 > Tag Type: 11 *(via Digital Matter)*  
+> Device Type: `ELA/mag`  
 > Payload size: 24 Bytes
 
 ## Asset List

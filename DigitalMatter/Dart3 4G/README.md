@@ -1,5 +1,7 @@
 # Digital Matter Dart3 4G
 
+> Device Type: `DigitalMatter/dart3-4g`  
+
 ## Asset List (new integration, no ABCL)
 | Title | Name | Type | Profile | Unit | Extra |
 |---|---|---|---|---|---|

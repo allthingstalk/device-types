@@ -1,6 +1,7 @@
 # ELA RHT Bluetooth Tag
 
 > Tag Type: 16 *(via Digital Matter)*  
+> Device Type: `ELA/rht`  
 > Payload size: 24 Bytes
 
 ## Asset List

@@ -1,6 +1,7 @@
 # ELA MOV Bluetooth Tag
 
 > Tag Type: 12 *(via Digital Matter)*  
+> Device Type: `ELA/mov`  
 > Payload size: 24 Bytes
 
 ## Asset List

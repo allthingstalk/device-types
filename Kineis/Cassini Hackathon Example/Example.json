@@ -1,0 +1,59 @@
+{
+    "sense": [
+      {
+        "asset": "temperature",
+        "value": {
+          "byte": 0,
+          "bytelength": 2,
+          "type": "integer",
+          "byteorder": "small",
+          "calculation": "val/100"
+        }
+      },
+      {
+        "asset": "humidity",
+        "value": {
+          "byte": 2,
+          "bytelength": 2,
+          "byteorder": "small",
+          "type": "integer"
+        }
+      },
+      {
+        "asset": "pressure",
+        "value": {
+          "byte": 4,
+          "bytelength": 2,
+          "byteorder": "small",
+          "type": "integer"
+        }
+      },
+      {
+        "asset": "light",
+        "value": {
+          "byte": 6,
+          "bytelength": 1,
+          "signed": false,
+          "type": "integer"
+        }
+      },
+      {
+        "asset": "sound",
+        "value": {
+          "byte": 7,
+          "bytelength": 1,
+          "signed": false,
+          "type": "integer"
+        }
+      },
+      {
+        "asset": "potentiometer",
+        "value": {
+          "byte": 8,
+          "bytelength": 1,
+          "signed": false,
+          "type": "integer"
+        }
+      }
+    ]
+  }

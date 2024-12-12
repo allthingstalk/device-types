@@ -1,5 +1,7 @@
 # Digital Matter Barra Core
 
+> Device Type: `DigitalMatter/barra-core`  
+
 | Title | Name | Type | Profile | Unit | Extra |
 |---|---|---|---|---|---|
 | Reason | reason | sensor | number | | |

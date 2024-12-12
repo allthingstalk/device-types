@@ -1,5 +1,7 @@
 # Digital Matter Yabby3
 
+> Device Type: `DigitalMatter/yabby3`  
+
 ## Asset List
 
 ### Old Digital Matter Integration (ABCL)

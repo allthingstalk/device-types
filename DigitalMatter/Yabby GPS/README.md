@@ -1,5 +1,7 @@
 # Digital Matter Yabby GPS
 
+> Device Type: `DigitalMatter/yabby-gps`  
+
 ## Asset List (new integration - no ABCL)
 | Title | Name | Type | Profile | Unit | Extra |
 |---|---|---|---|---|---|

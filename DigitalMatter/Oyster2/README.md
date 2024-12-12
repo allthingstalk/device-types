@@ -1,5 +1,7 @@
 # Digital Matter Oyster2
 
+> Device Type: `DigitalMatter/oyster2`  
+
 ## Asset List (new integration - no ABCL)
 | Title | Name | Type | Profile | Unit | Extra |
 |---|---|---|---|---|---|

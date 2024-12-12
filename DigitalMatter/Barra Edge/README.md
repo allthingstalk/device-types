@@ -1,5 +1,7 @@
 # Digital Matter Barra Edge
 
+> Device Type: `DigitalMatter/barra-edge`  
+
 | Title | Name | Type | Profile | Unit | Extra |
 |---|---|---|---|---|---|
 | Reason | reason | sensor | number | | |

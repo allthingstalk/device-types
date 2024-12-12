@@ -1,5 +1,7 @@
 # Digital Matter Falcon
 
+> Device Type: `DigitalMatter/falcon`  
+
 ## Asset List (new integration - no ABCL)
 | Title | Name | Type | Profile | Unit | Extra |
 |---|---|---|---|---|---|

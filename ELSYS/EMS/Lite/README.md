@@ -1,5 +1,7 @@
 # ELSYS EMS Lite
 
+> Device Type: `elsys/ems-lite`  
+
 LoRaWAN leak detection sensor with temperature and humidity sensors as well.  
 
 [Operating Manual](https://www.elsys.se/public/manuals/Operating_Manual_EMS_Lite.pdf)  

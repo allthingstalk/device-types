@@ -1,5 +1,7 @@
 # ELSYS ERS Eye
 
+> Device Type: `elsys/ers-eye`  
+
 [Operating Manual](https://elsys.se/public/manuals/Operating%20Manual%20ERS%20Eye.pdf)
 [Datasheet](https://elsys.se/public/datasheets/ERS_Eye_datasheet.pdf)
 

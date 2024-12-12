@@ -1,5 +1,7 @@
 # ELSYS ERS CO2
 
+> Device Type: `elsys/ers-co2`  
+
 [Operating Manual](https://elsys.se/public/manuals/Operating%20Manual%20ERS%20CO2.pdf)  
 [Datasheet](https://elsys.se/public/datasheets/ERS_CO2_datasheet.pdf)  
 

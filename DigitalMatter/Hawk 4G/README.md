@@ -1,5 +1,7 @@
 # DigitalMatter Hawk 4G
 
+> Device Type: `DigitalMatter/hawk`  
+
 [Manufacturer's Website](https://www.digitalmatter.com/devices/hawk/)
 
 ## Asset List

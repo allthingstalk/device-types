@@ -1,5 +1,7 @@
 # ELSYS ERS
 
+> Device Type: `elsys/ers`  
+
 [Operating Manual](https://www.elsys.se/public/manuals/Operating%20Manual%20ERS.pdf)  
 [Datasheet](https://elsys.se/public/datasheets/ERS_datasheet.pdf)
 

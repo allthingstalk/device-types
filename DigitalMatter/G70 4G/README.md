@@ -1,5 +1,7 @@
 # Digital Matter G70 4G
 
+> Device Type: `DigitalMatter/g70-4g`  
+
 ## Asset List (new integration, no ABCL)
 | Title | Name | Type | Profile | Unit | Extra |
 |---|---|---|---|---|---|

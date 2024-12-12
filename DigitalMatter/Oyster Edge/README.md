@@ -1,5 +1,7 @@
 # Digital Matter Oyster Edge
 
+> Device Type: `DigitalMatter/oyster-edge`    
+
 | Title | Name | Type | Profile | Unit | Extra |
 |---|---|---|---|---|---|
 | Reason | reason | sensor | number | | |

@@ -1,5 +1,7 @@
 # ELSYS EMS
 
+> Device Type: `elsys/ems`  
+
 Indoor LoRaWAN door and leak sensor with additional temperature, humidity and acceleration
 celeration sensors + NFC for configuration.
 

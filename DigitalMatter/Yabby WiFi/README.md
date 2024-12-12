@@ -1,5 +1,7 @@
 # Digital Matter Yabby WiFi
 
+> Device Type: `DigitalMatter/yabby-wifi`  
+
 ## Asset List (new DM Integration, no ABCL)
 
 | Title | Name | Type | Profile | Unit | Extra |

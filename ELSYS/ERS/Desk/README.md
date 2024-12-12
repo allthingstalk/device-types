@@ -1,5 +1,7 @@
 # ELSYS ERS Desk
 
+> Device Type: `elsys/ers-desk`  
+
 [Operating Manual](https://elsys.se/public/manuals/Operating%20Manual%20ERS%20Desk.pdf)  
 [Datasheet](https://elsys.se/public/datasheets/ERS_Desk_datasheet.pdf)  
 

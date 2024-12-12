@@ -1,6 +1,7 @@
 # Eddystone Bluetooth Tag
 
 > Tag Type: 2 *(via Digital Matter)*  
+> Device Type: `eddystone/beacon`  
 > Payload size: 17 Bytes (no MAC Address) or 23 bytes (with MAC Address)
 
 ## Asset List

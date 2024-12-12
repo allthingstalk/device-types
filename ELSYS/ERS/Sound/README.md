@@ -1,5 +1,7 @@
 # ELSYS ERS Sound
 
+> Device Type: `elsys/ers-sound`  
+
 [Operating Manual](https://elsys.se/public/manuals/Operating%20Manual%20ERS%20Sound.pdf)  
 [Datasheet](https://elsys.se/public/datasheets/ERS_Sound_datasheet.pdf)  
 

@@ -1,5 +1,7 @@
 # Digital Matter Bolt
 
+> Device Type: `DigitalMatter/bolt`  
+
 ## Asset List (new integration - no ABCL)
   
 | Title | Name | Type | Profile | Unit | Extra |

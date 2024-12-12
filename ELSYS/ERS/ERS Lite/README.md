@@ -1,5 +1,7 @@
 # ELSYS ERS Lite
 
+> Device Type: `elsys/ers-lite`  
+
 [Operating Manual](https://elsys.se/public/manuals/Operating%20Manual%20ERS%20Lite.pdf)  
 [Datasheet](https://elsys.se/public/datasheets/ERS_Lite_datasheet.pdf)
 

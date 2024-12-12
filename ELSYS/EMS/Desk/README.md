@@ -1,5 +1,7 @@
 # EMS Desk
 
+> Device Type: `elsys/ems-desk`  
+
 LoRaWAN sensor that detects occupancy using a body heat sensor (most likely a grid-eye IR sensor) and has temperature, humidity and acceleration sensors + NFC.
 
 [Operating Manual](https://www.elsys.se/public/manuals/Operating_Manual_EMS_Desk.pdf)  
