@@ -1,10 +1,21 @@
 {
     "name": "Eddystone BLE Tag ABCL Decoder",
-    "comment": "Untested, work in progress. Digital Matter Tag Type 2.",
-    "version": "0.0.2",
+    "comment": "Digital Matter Tag Type 2.",
+    "version": "0.0.3",
     "sense": [
       {
         "asset": "hardware_unique_id",
+        "comment": "This is the Namespace ID and Instance ID combined",
+        "value": {
+          "byte": 0,
+          "bytelength": 16,
+          "byteorder": "big",
+          "signed": "false",
+          "type": "hexstring"
+        }
+      },
+      {
+        "asset": "namespace_id",
         "comment": "This is the Namespace ID",
         "value": {
           "byte": 0,
