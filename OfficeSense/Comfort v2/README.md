@@ -85,8 +85,10 @@ Heartbeats are special confirmed uplink messages that are sent to confirm the ne
 > Example: A value of `720` means the heartbeat interval is set to 720 minutes (= 12 hours).
 
 ## Forced LoRaWAN Rejoin Counter
+> **NOTE: The value can only be in increments of 100, with everything else being rounded. Sending a value of `17235` will be rounded to `17200` and the device will return the same rounded value.**   
+
 Besides the heartbeat, the device will also try to rejoin the network after a certain amount of uplink messages have been sent. This is to periodically refresh the LoRaWAN session credentials to increase security.  
-> Example: A value of `2000` means the device will perform a new join request (and get new encryption keys) after 2000 uplink messages.
+> Example: A value of `2000` means the device will perform a new join request (and get new encryption keys) after 2000 uplink messages.  
 
 ## Hardware Version
 The Firmware Build Timestamp is generated when the firmware file is compiled. Together with the software
