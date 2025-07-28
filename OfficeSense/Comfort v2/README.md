@@ -1,34 +1,34 @@
 # Capgemini/HEAD Electronics OfficeSense Comfort v2 Sensor
 
 Use the string asset `Read Data` if you wish to request any parameter or sensor state from the device by sending the name of the asset(s) you wish to be populated.  
-For example, sending a string `"sleep_duration"` command via the `read_data` asset will make the device send the data to populate the `sleep_duration` asset on the next uplink.  
-You can also send multiple asset names in a single message. For example, sending a string `"sleep_duration, hardware_version, firmware_version, validation_duration, heartbeat_interval"` will make the device send the data for all of those assets on the next uplink.
+For example, sending a string `"sample_interval"` command via the `read_data` asset will make the device send the data to populate the `sample_interval` asset on the next uplink.  
+You can also send multiple asset names in a single message. For example, sending a string `"sample_interval, hardware_version, firmware_version, comfort_minimum_interval, heartbeat_interval"` will make the device send the data for all of those assets on the next uplink.
 
 # Assets
 | Name                               | Display Name                         | Type    | Kind     | Unit    | Additional         |
 |------------------------------------|--------------------------------------|---------|----------|---------|--------------------|
-| co2                                | CO2                                  | Number  | Sensor   | ppm     |                    |
-| sound                              | Sound Level                          | Number  | Sensor   | dB      |                    |
-| light                              | Light Level                          | Number  | Sensor   | Lux     |                    |
-| temperature                        | Temperature                          | Number  | Sensor   | °C      |                    |
-| humidity                           | Relative Humidity                    | Number  | Sensor   | %       | Min: 0, Max: 100   |
-| sample_interval                    | Sample Interval                      | Integer | Actuator | seconds | Min: 1, Max: 43200 |
-| temperature_delta                  | Temperature Delta                    | Number  | Actuator | °C      | Min: 0, Max: 50    |
-| humidity_delta                     | Humidity Delta                       | Integer | Actuator | %       | Min: 0, Max: 100   |
-| co2_delta                          | CO2 Delta                            | Integer | Actuator | ppm     | Min: 0, Max: 5000  |
-| light_delta                        | Light Delta                          | Integer | Actuator | Lux     | Min: 0             |
-| sound_delta                        | Sound Delta                          | Integer | Actuator | dB      | Min: 0             |
-| comfort_minimum_interval           | Minimum LoRaWAN Interval             | Integer | Actuator | seconds | Min: 0, Max: 43200 |
-| battery_percentage                 | Battery Percentage                   | Number  | Sensor   | %       | Min: 0, Max: 100   |
-| battery_voltage                    | Battery Voltage                      | Number  | Sensor   | V       | Min: 0             |
-| heartbeat_interval                 | Heartbeat Interval                   | Integer | Actuator | minutes | Min: 1, Max: 720   |
-| lora_rejoin_count                  | Forced LoRaWAN Rejoin Counter        | Integer | Actuator | uplinks | Min: 100, Max: 25000|
-| hardware_version                   | Hardware Version                     | String  | Sensor   |         |                    |
-| firmware_version                   | Firmware Version                     | String  | Sensor   |         |                    |
-| pcb_id                             | PCB ID                               | String  | Sensor   |         |                    |
-| pcb_version                        | PCB Version                          | String  | Sensor   |         |                    |
-| firmware_build                     | Firmware Build Timestamp             | String  | Sensor   |         |                    |
-| read_data                          | Read Data                            | String  | Actuator |         |                    |
+| [co2](#co2)                                | CO2                                  | Number  | Sensor   | ppm     |                    |
+| [sound](#sound-level)                              | Sound Level                          | Number  | Sensor   | dB      |                    |
+| [light](#light-level)                              | Light Level                          | Number  | Sensor   | Lux     |                    |
+| [temperature](#temperature)                        | Temperature                          | Number  | Sensor   | °C      |                    |
+| [humidity](#relative-humidity)                           | Relative Humidity                    | Number  | Sensor   | %       | Min: 0, Max: 100   |
+| [sample_interval](#sample-interval)                    | Sample Interval                      | Integer | Actuator | seconds | Min: 1, Max: 43200 |
+| [temperature_delta](#temperature-delta)                  | Temperature Delta                    | Number  | Actuator | °C      | Min: 0, Max: 50    |
+| [humidity_delta](#humidity-delta)                     | Humidity Delta                       | Integer | Actuator | %       | Min: 0, Max: 100   |
+| [co2_delta](#co2-delta)                          | CO2 Delta                            | Integer | Actuator | ppm     | Min: 0, Max: 5000  |
+| [light_delta](#light-delta)                        | Light Delta                          | Integer | Actuator | Lux     | Min: 0             |
+| [sound_delta](#sound-delta)                        | Sound Delta                          | Integer | Actuator | dB      | Min: 0             |
+| [comfort_minimum_interval](#minimum-lorawan-interval)           | Minimum LoRaWAN Interval             | Integer | Actuator | seconds | Min: 0, Max: 43200 |
+| [battery_percentage](#battery-percentage)                 | Battery Percentage                   | Number  | Sensor   | %       | Min: 0, Max: 100   |
+| [battery_voltage](#battery-voltage)                    | Battery Voltage                      | Number  | Sensor   | V       | Min: 0             |
+| [heartbeat_interval](#heartbeat-interval)                 | Heartbeat Interval                   | Integer | Actuator | minutes | Min: 1, Max: 720   |
+| [lora_rejoin_count](#forced-lorawan-rejoin-counter)                  | Forced LoRaWAN Rejoin Counter        | Integer | Actuator | uplinks | Min: 100, Max: 25000|
+| [hardware_version](#hardware-version)                   | Hardware Version                     | String  | Sensor   |         |                    |
+| [firmware_version](#firmware-version)                   | Firmware Version                     | String  | Sensor   |         |                    |
+| [pcb_id](#pcb-id)                             | PCB ID                               | String  | Sensor   |         |                    |
+| [pcb_version](#pcb-version)                        | PCB Version                          | String  | Sensor   |         |                    |
+| [firmware_build](#firmware-build-timestamp)                     | Firmware Build Timestamp             | String  | Sensor   |         |                    |
+| [read_data](#read-data)                          | Read Data                            | String  | Actuator |         |                    |
 
 
 ## CO2
@@ -107,8 +107,8 @@ version this parameter provides information what firmware is flashed on the devi
 
 ## Read Data
 Use this asset if you wish to request any parameter or sensor state from the device by sending the name of the asset(s) you wish to be populated.  
-> Example: Sending a string `"sleep_duration"` command will make the device send the data to populate the `sleep_duration` asset on the next LoRaWAN transmission.  
-> **NOTE:** You can also send multiple asset names in a single message. Sending a string `"sleep_duration, hardware_version, firmware_version, validation_duration, heartbeat_interval"` will make the device send the data for all of those assets on the next LoRaWAN transmission.
+> Example: Sending a string `"sample_interval"` command will make the device send the data to populate the `sample_interval` asset on the next LoRaWAN transmission.  
+> **NOTE:** You can also send multiple asset names in a single message. Sending a string `"sample_interval, hardware_version, firmware_version, comfort_minimum_interval, heartbeat_interval"` will make the device send the data for all of those assets on the next LoRaWAN transmission.
 
 
 # Example Payloads  

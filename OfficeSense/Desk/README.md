@@ -7,22 +7,22 @@ You can also send multiple asset names in a single message. For example, sending
 # Assets
 | Name                               | Display Name                         | Type    | Kind     | Unit    | Additional         |
 |------------------------------------|--------------------------------------|---------|----------|---------|--------------------|
-| occupied                           | Occupied                             | Boolean | Sensor   |         |                    |
-| activity_level                     | Activity Level                       | Integer | Sensor   |         |                    |
-| battery_percentage                 | Battery Percentage                   | Integer | Sensor   | %       | Min: 0, Max: 100   |
-| battery_voltage                    | Battery Voltage                      | Number  | Sensor   | V       | Min: 0             |
-| activity_threshold                 | Activity Level Threshold (Primary)   | Integer | Actuator |         | Min: 0, Max: 255   |
-| threshold_hysteresis               | Activity Level Threshold (Secondary) | Integer | Actuator |         | Min: 0, Max: 255   |
-| validation_duration                | Validation Duration                  | Integer | Actuator | seconds | Min: 1, Max: 43200 |
-| sleep_duration                     | Sleep Duration                       | Integer | Actuator | seconds | Min: 1, Max: 43200 |
-| heartbeat_interval                 | Heartbeat Interval                   | Integer | Actuator | minutes | Min: 1, Max: 720   |
-| lora_rejoin_count                  | Forced LoRaWAN Rejoin Counter        | Integer | Actuator | uplinks | Min: 100, Max: 25000|
-| hardware_version                   | Hardware Version                     | String  | Sensor   |         |                    |
-| firmware_version                   | Firmware Version                     | String  | Sensor   |         |                    |
-| pcb_id                             | PCB ID                               | String  | Sensor   |         |                    |
-| pcb_version                        | PCB Version                          | String  | Sensor   |         |                    |
-| firmware_build                     | Firmware Build Timestamp             | String  | Sensor   |         |                    |
-| read_data                          | Read Data                            | String  | Actuator |         |                    |
+| [occupied](#occupied)                           | Occupied                             | Boolean | Sensor   |         |                    |
+| [activity_level](#activity-level)                     | Activity Level                       | Integer | Sensor   |         |                    |
+| [battery_percentage](#battery-percentage)                 | Battery Percentage                   | Integer | Sensor   | %       | Min: 0, Max: 100   |
+| [battery_voltage](#battery-voltage)                    | Battery Voltage                      | Number  | Sensor   | V       | Min: 0             |
+| [activity_threshold](#activity-level-threshold-primary)                 | Activity Level Threshold (Primary)   | Integer | Actuator |         | Min: 0, Max: 255   |
+| [threshold_hysteresis](#activity-level-threshold-secondary)               | Activity Level Threshold (Secondary) | Integer | Actuator |         | Min: 0, Max: 255   |
+| [validation_duration](#validation-duration)                | Validation Duration                  | Integer | Actuator | seconds | Min: 1, Max: 43200 |
+| [sleep_duration](#sleep-duration)                     | Sleep Duration                       | Integer | Actuator | seconds | Min: 1, Max: 43200 |
+| [heartbeat_interval](#heartbeat-interval)                 | Heartbeat Interval                   | Integer | Actuator | minutes | Min: 1, Max: 720   |
+| [lora_rejoin_count](#forced-lorawan-rejoin-counter)                  | Forced LoRaWAN Rejoin Counter        | Integer | Actuator | uplinks | Min: 100, Max: 25000|
+| [hardware_version](#hardware-version)                   | Hardware Version                     | String  | Sensor   |         |                    |
+| [firmware_version](#firmware-version)                   | Firmware Version                     | String  | Sensor   |         |                    |
+| [pcb_id](#pcb-id)                             | PCB ID                               | String  | Sensor   |         |                    |
+| [pcb_version](#pcb-version)                        | PCB Version                          | String  | Sensor   |         |                    |
+| [firmware_build](#firmware-build-timestamp)                     | Firmware Build Timestamp             | String  | Sensor   |         |                    |
+| [read_data](#read-data)                          | Read Data                            | String  | Actuator |         |                    |
 
 ## Occupied
 The current state of the desk. 
