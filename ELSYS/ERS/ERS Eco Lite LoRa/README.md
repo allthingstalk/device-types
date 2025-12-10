@@ -18,6 +18,7 @@ Use the general Elsys JS payload decoder.
 | humidity    | Humidity        | %    | number    | sensor     |
 | temperature | Temperature     | °C   | number    | sensor     |
 | battery     | Battery Voltage | V    | number    | sensor     |
+| raw_downlink | Raw Downlink (Configuration) | | string | actuator |
 
 ## Example Payloads  
 WIP

@@ -28,6 +28,7 @@ Mount the sensor under the desk at approximately 10-40 cm from the edge with the
 | humidity    | Humidity        | %    | integer   | sensor     |
 | temperature | Temperature     | °C   | number    | sensor     |
 | battery     | Battery Voltage | V    | number    | sensor     |
+| raw_downlink | Raw Downlink (Configuration) | | string | actuator |
 
 ## Rules
 

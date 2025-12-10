@@ -14,4 +14,5 @@ LoRaWAN leak detection sensor with temperature and humidity sensors as well.
 | temperature | Temperature     | °C   | numberr   | sensor     | Ambient temperature                                 |
 | humidity    | Humidity        | %    | integer   | sensor     | Ambient humidity                                    |
 | battery     | Battery Voltage | V    | number    | sensor     | Battery voltage level                               |
+| raw_downlink | Raw Downlink (Configuration) | | string | actuator |
 

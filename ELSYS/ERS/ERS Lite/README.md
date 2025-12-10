@@ -15,6 +15,7 @@ Use the general ELSYS JavaScript payload decoder.
 | humidity    | Humidity        | %    | integer   | sensor     |
 | temperature | Temperature     | °C   | number    | sensor     |
 | battery     | Battery Voltage | V    | number    | sensor     |
+| raw_downlink | Raw Downlink (Configuration) | | string | actuator |
 
 ## Rules
 | Rule                            | Notification Body                                                                                                                       | State   | Notifies via | People Notified |

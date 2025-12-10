@@ -17,6 +17,7 @@ Do not install it near loud sound sources such as doors, machines (e.g., printer
 | humidity     | Humidity            | %     | integer   | sensor     |
 | temperature  | Temperature         | °C    | number    | sensor     |
 | battery      | Battery Voltage     | V     | number    | sensor     |
+| raw_downlink | Raw Downlink (Configuration) | | string | actuator |
 
 ## Rules
 

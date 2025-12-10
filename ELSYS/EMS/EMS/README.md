@@ -20,6 +20,7 @@ celeration sensors + NFC for configuration.
 | battery         | Battery Voltage            | V    | number    | sensor     | Voltage of the battery                                         |
 | acc_motion      | Accelerometer Motion       | -    | integer   | sensor     | The amount of motion detected by the accelerometer             |
 | pulse_count_abs | Total Door Cycles          | -    | integer   | sensor     | Amount of times the door has been opened (digital asset above) |
+| raw_downlink | Raw Downlink (Configuration) | | string | actuator | |
 
 Acceleration Profile Type:  
 ```
